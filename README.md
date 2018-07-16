@@ -67,3 +67,15 @@ git submodule update
 #update the submodule
 
 #use the commit and push now to add this as submodule in your repository
+
+#To checkin submodule change, do the following
+
+cd pathToSUbmodule
+git add <filename>
+git commit -m "message"
+git push
+
+cd pathToMainProjeect
+git add <pathToSubModule>
+git commit -m "message"
+git push
